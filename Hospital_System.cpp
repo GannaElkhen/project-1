@@ -1,11 +1,9 @@
 
-
 #include <iostream>
 using namespace std;
-
 int main()
 {
-    int specialization, statis, user_choice, number_of_patient = 0,  i = 1,u=1,r=1;
+    int specialization, statis, user_choice, number_of_patient = 0,u=1,r=1;
     string name;
 
     string a_name_statis[21][6];
@@ -35,11 +33,8 @@ int main()
                         r_name[number_of_patient] = name;
                     }
                     else {
-
                         b_name_statis[i][number_of_patient] = name + "   urgent";
                         u_name[number_of_patient] = name;
-
-
                     }
                 }
             }
@@ -61,7 +56,6 @@ int main()
         else if (user_choice == 3) {
             if (number_of_patient == 0)
                 cout << "No patient at the moment,Have rest Dr \n";
-
             else if (u < 6) {
                     if (!u_name[u].empty()) {
                         cout << u_name[u] << ",please go with the Dr\n";
