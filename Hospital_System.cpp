@@ -41,14 +41,8 @@ int main()
 
 
                     }
-
-
-
-
                 }
-
             }
-
         }
 
         else if (user_choice == 2) {
@@ -61,58 +55,33 @@ int main()
                 if (a_name_statis[specialization][i].empty())
                     continue;
                 cout << a_name_statis[specialization][i] << "\n";
-
             }
-
-
-
         }
 
         else if (user_choice == 3) {
-            
-
             if (number_of_patient == 0)
                 cout << "No patient at the moment,Have rest Dr \n";
 
             else if (u < 6) {
-                
-                
-                
                     if (!u_name[u].empty()) {
                         cout << u_name[u] << ",please go with the Dr\n";
                         u++;
-                        
                     }
                     else 
                         u++;
-                
-                
             }
 
             else if (r < 6) {
-                
-               
-
                     if (!r_name[r].empty()) {
                         cout << r_name[r] << ",please go with the Dr\n";
                         r++;
-                      
                     }
                     else 
                         r++;
-                        
-                        
-                    
-           
             }
-
-
-
             else
                 number_of_patient = 0;
         }
-
-
         else
             break;
     }
